@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+header {
+    background-color: #364552;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+    height: 60px;
+}
+
+.si{
+    text-align: center;
+}
+
+.inicio{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    position: relative;
+    background-color: #364552;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+    font-size: 32px;
+}
+
+.header h1, .inicio {
+    margin: 0;
+    padding-left: 20px;
+}
+.barraMenu {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.blog {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    position: relative;
+    background-color: #364552;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+}
+.blog{
+    transition: color 0.5s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.blog:hover{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+.contenedor {
+    width: 80%; /* Ajustar al ancho completo del contenedor padre */
+    display: flex; /* Utilizar flexbox para organizar los artículos */
+    flex-wrap: wrap; /* Permitir que los artículos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Distribuir los artículos uniformemente en el contenedor */
+    margin: 0 auto;
+}
+
+section article {
+    flex: 0 0 calc(50% - 1rem); /* Cada artículo ocupa el 50% del ancho del contenedor con un pequeño margen */
+    transition: all 0.5s ease;
+    background-color: #F8EF8A;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+    max-height: auto;
+    margin: 50px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.7rem rgba(0,0,0,0.9);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+.art{
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #364552;
+    padding: 3rem;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.5s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+.cont {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #FFF; /* Color del rectángulo */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+    display: block;
+    width: 250px; /* Ancho de la imagen de perfil */
+    height: 250px;
+    border-radius: 100%;
+    margin: -50px auto 20px; /* Mover la imagen hacia arriba y centrarla horizontalmente */
+}
+
+.contenido {
+    padding-top: 20px; /* Añadir espacio para la imagen de perfil */
+}
+
+.contenedor-articulos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los artículos se envuelvan en múltiples líneas si no caben */
+    justify-content: space-around; /* Distribuir los artículos uniformemente en el contenedor */
+}
+
+.contenedor-articulos article {
+    flex: 0 0 calc(30% - 20px); /* Reducir el ancho de los artículos */
+    margin: 10px; /* Reducir el espacio entre los artículos */
+    padding: 5px; /* Reducir el relleno dentro de los artículos */
+    text-align: center;
+    background-color: #F8EF8A;
+    border-radius: 10px;
+}
+
+
+.imagen {
+    width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px;
+    min-height: 80px;
+    max-width: 95%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: #1a1a66;
+}
+
+.seccion-evidencia {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.seccion-evidencia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.imagenEvidencia {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* El ancho será el 50% del ancho del contenedor padre */
+    margin-left: 70px;
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: #73a3d1;
+}
+
+.imagenEvidencia img {
+    width: 80%;
+    height: auto;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.imagenEvidencia:hover {
+    box-shadow: 0 0.1rem 0.7rem rgba(0,0,0,0.9);
+}
+
+#audio-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
